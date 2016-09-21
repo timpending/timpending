@@ -30,22 +30,36 @@
     //         textInterval: 3000
     //     });
     // }
-    $('.typist')
-      .typist({
-          letterInterval: 80,
-          text: ''
-      })
-      .typistAdd('Develops ')
-      .typistPause(1500)
-      .typistRemove(('develops ').length)
-      .typistAdd('Designs ')
-      .typistPause(1500)
-      .typistRemove(('designs ').length)
-      .typistAdd('Troubleshoots ')
-      .typistPause(1500)
-      .typistRemove(('Troubleshoots ').length)
-      .typistAdd('Enjoys every minute of it all.')
+  // Running Typist Function
+  typistChange(1500)
 
+  function typistChange(ms) {
+    var wordArray = ['Designs', 'Develops', 'Troubleshoots', 'Enjoys every minute of it all']
+    let typistClass = $('.typist')
+    for (let i = 0; i < wordArray.length; i++) {
+      if (i==0){
+        typistClass.typist({
+              letterInterval: 80,
+              text: ''
+          })
+          .typistPause(ms/2)
+          .typistAdd(wordArray[i])
+          .typistPause(ms)
+          .typistRemove(wordArray[i].length+1)
+      } else if (i==wordArray.length-1 ){
+        $('.typist').typistAdd(wordArray[i])
+      } else {
+        $('.typist').typistAdd(wordArray[i])
+        .typistPause(ms)
+        .typistRemove(wordArray[i].length)
+      }
+    }
+
+
+
+
+
+}
 
 
   });
