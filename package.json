@@ -13,6 +13,7 @@
     "express": "~4.13.4",
     "install": "^0.8.1",
     "jade": "~1.11.0",
+    "jquery.typist": "0.0.7",
     "morgan": "~1.7.0",
     "npm": "^3.10.7",
     "serve-favicon": "~2.3.0",
