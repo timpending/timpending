@@ -3,6 +3,15 @@ body {
   /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
 }
 
+.menu-container {
+  width:100vw;
+  padding: 0;
+}
+
+.menuzord {
+  width:100vw;
+}
+
 .parallax {
   background-image: url('../images/hero.jpeg') !important;
 }
