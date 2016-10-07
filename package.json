@@ -1,7 +1,7 @@
 {
-  "name": "massive-markup",
+  "name": "timpender",
   "version": "1.5.0",
-  "description": "Massive premium HTML multipurpose template. Only available on ThemeForest by ThemeBucket.",
+  "description": "Portfolio Site",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,7 +16,7 @@
     "premium",
     "template"
   ],
-  "author": "ThemeBucket",
+  "author": "Tim Pender",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",

@@ -1,0 +1,81 @@
+body {
+  margin:0;
+  /*font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+}
+
+.menu-container {
+  width:100vw;
+  padding: 0;
+}
+
+.menuzord {
+  width:100vw;
+}
+
+.parallax {
+  background-image: url('../images/hero.jpeg') !important;
+}
+
+.vertical-align {
+    position: relative;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#fullscreen-banner {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+
+/*  Typist */
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: .0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.typist-blink:after {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    height: 47px;
+    margin-right: 7px;
+    margin-left: 3px;
+    content: " ";
+    -webkit-animation: blink 1s step-start 0s infinite;
+            animation: blink 1s step-start 0s infinite;
+    border-right: 2px solid;
+}
+
+.typist-blink > .selectedText {
+    display: none;
+}
+
+.typist-mark > .selectedText {
+    color: #fff;
+    background-color: #222;
+    font-style: normal;
+}
